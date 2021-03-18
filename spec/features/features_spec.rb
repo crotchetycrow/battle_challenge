@@ -14,19 +14,6 @@ feature 'Viewing hitpoints' do
 
     visit '/play'
 
-    expect(page).to have_content 'Pretty Creeper has 10 hitpoints'
+    expect(page).to have_content 'Pretty Creeper has 60 hitpoints'
   end
-
-  feature 'view attack confirmation' do
-    scenario 'player 1 sees a confirmation of attacking player 2' do
-      sign_in_and_play
-
-      visit '/play'
-
-      click_button 'attack'
-
-      expect(page).to have_content "Ridiculous Blip has attacked Pretty Creeper"
-    end
-  end
-
 end

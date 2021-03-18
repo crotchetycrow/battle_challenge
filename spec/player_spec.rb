@@ -6,4 +6,6 @@ let(:test_player) { Player.new("Ridiculous Blip") }
 
     expect(test_player.name).to eq "Ridiculous Blip"
   end
+
+  # you're supposed to write some tests!!!! sheesh!
 end
