@@ -1,3 +1,7 @@
 <h1>Do you want to play a game, <%= @player1 %> and <%= @player2 %>?</h1>
 
+<form action="/attack" method="post">
+  <button type="submit" name="attack" value="Attack">Attack</button>
+</form>
+
 <h1><%= @player2 %> has 10 hitpoints</h1>
