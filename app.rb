@@ -30,13 +30,14 @@ class Battle < Sinatra::Base
   end
 
   post '/ok' do
+    @player2_attack = $player2.attack
     redirect '/play'
   end
 
   post '/attack' do
     @player1_name = $player1.name
     @player2_name = $player2.name
-    @player2_attack = $player2.attack
+
     erb(:attack)
   end
 end
